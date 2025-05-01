@@ -20,6 +20,7 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
+   
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
@@ -28,6 +29,8 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'react/prop-types': 'off', // add this line
+      'react/no-unescaped-entities': 'off', // add this line
     },
   },
 ]
